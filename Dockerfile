@@ -17,5 +17,4 @@ RUN cat /usr/share/keyrings/metasploit.key | gpg --dearmor > /usr/share/keyrings
 
 WORKDIR /root
 
-ENTRYPOINT [ "/usr/local/bin/docker-entrypoint.sh" ]
 CMD [ "msfconsole" ]
